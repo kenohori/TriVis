@@ -437,7 +437,8 @@ struct Polygon_repairWrapper {
         OGRDataSource::DestroyDataSource(dataSource);
       }
       
-      prepairWrapper->prepair->insert_constraints(prepairWrapper->prepair->triangulation, inGeometry);
+      prepairWrapper->prepair->insert_constraints(inGeometry);
+      prepairWrapper->prepair->attempt_to_fix_overlapping_constraints();
       
       std::vector<GLfloat> triangulationVertices;
       for (prepair::Triangulation::Finite_edges_iterator current_edge = prepairWrapper->prepair->triangulation.finite_edges_begin(); current_edge != prepairWrapper->prepair->triangulation.finite_edges_end(); ++current_edge) {
@@ -468,7 +469,7 @@ struct Polygon_repairWrapper {
       
       [view->renderer loadTriangulation:triangulationVertices.size() vertices:triangulationVertices.data()];
       
-      prepairWrapper->prepair->tag_odd_even(prepairWrapper->prepair->triangulation);
+      prepairWrapper->prepair->tag_odd_even();
       
       std::vector<GLfloat> taggedTriangulationVertices;
       for (prepair::Triangulation::Finite_faces_iterator current_face = prepairWrapper->prepair->triangulation.finite_faces_begin(); current_face != prepairWrapper->prepair->triangulation.finite_faces_end(); ++current_face) {
@@ -493,7 +494,7 @@ struct Polygon_repairWrapper {
       
       [view->renderer loadTaggedTriangulation:taggedTriangulationVertices.size() vertices:taggedTriangulationVertices.data()];
       
-      outGeometry = prepairWrapper->prepair->reconstruct(prepairWrapper->prepair->triangulation);
+      outGeometry = prepairWrapper->prepair->reconstruct();
       
       std::vector<GLfloat> outputVertices;
       if (outGeometry->getGeometryType() == wkbPolygon) {
