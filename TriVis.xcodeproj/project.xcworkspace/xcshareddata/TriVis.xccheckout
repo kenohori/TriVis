@@ -10,31 +10,43 @@
 	<string>TriVis</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>36EB80CC-DEB4-4F0E-A987-784D05853F86</key>
+		<key>C7DF65F9D371F4AD651607A2DFD02A4CF1DB405E</key>
 		<string>https://github.com/kenohori/code</string>
+		<key>DAD6A4B5C4CCAAF0510D34B11F53980160B57535</key>
+		<string>https://g.a.k.arroyoohori%2540tudelft.nl@github.com/kenohori/TriVis.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TriVis/TriVis.xcodeproj/project.xcworkspace</string>
+	<string>TriVis.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>36EB80CC-DEB4-4F0E-A987-784D05853F86</key>
-		<string>../../..</string>
+		<key>C7DF65F9D371F4AD651607A2DFD02A4CF1DB405E</key>
+		<string>../../../code</string>
+		<key>DAD6A4B5C4CCAAF0510D34B11F53980160B57535</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kenohori/code</string>
+	<string>https://g.a.k.arroyoohori%2540tudelft.nl@github.com/kenohori/TriVis.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>36EB80CC-DEB4-4F0E-A987-784D05853F86</string>
+	<string>DAD6A4B5C4CCAAF0510D34B11F53980160B57535</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>36EB80CC-DEB4-4F0E-A987-784D05853F86</string>
+			<string>C7DF65F9D371F4AD651607A2DFD02A4CF1DB405E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>code</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DAD6A4B5C4CCAAF0510D34B11F53980160B57535</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TriVis</string>
 		</dict>
 	</array>
 </dict>

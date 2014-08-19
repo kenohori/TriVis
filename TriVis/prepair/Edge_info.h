@@ -19,45 +19,39 @@
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include "Triangle_info.h"
+#ifndef EDGE_INFO_H
+#define EDGE_INFO_H
 
-Triangle_info::Triangle_info() {
+class Edge_info {
+public:
+  Edge_info() {
+    info = 0x00;
+  }
+  
+  void clear() {
+    info = 0x00;
+  }
+  
+  bool to_fill_in() {
+    return (info & 0x01) == 0x01;
+  }
+  
+  void to_fill_in(bool fill_in) {
+    if (fill_in) info |= 0x01;
+    else info &= 0xfe;
+  }
+  
+  bool to_carve_out() {
+    return (info & 0x02) == 0x02;
+  }
+  
+  void to_carve_out(bool carve_out) {
+    if (carve_out) info |= 0x02;
+    else info &= 0xfd;
+  }
+  
+private:
+  unsigned char info;
+};
 
-}
-
-void Triangle_info::clear() {
-  info.reset();
-}
-
-bool Triangle_info::been_tagged() {
-  return info[0];
-}
-
-void Triangle_info::been_tagged(bool tagged) {
-  info[0] = tagged;
-}
-
-bool Triangle_info::is_in_interior() {
-  return info[1];
-}
-
-void Triangle_info::is_in_interior(bool in_interior) {
-  info[0] = true;
-  info[1] = in_interior;
-}
-
-bool Triangle_info::is_on_border() {
-  return info[2];
-}
-
-void Triangle_info::is_on_border(bool on_border) {
-  info[2] = on_border;
-}
-
-bool Triangle_info::been_reconstructed() {
-  return info[3];
-}
-
-void Triangle_info::been_reconstructed(bool reconstructed) {
-  info[3] = reconstructed;
-}
+#endif

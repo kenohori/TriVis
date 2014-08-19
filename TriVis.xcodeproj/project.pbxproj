@@ -10,8 +10,6 @@
 		BE0ADC161960383700E24690 /* GDAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC151960383600E24690 /* GDAL.framework */; };
 		BE0ADC1F196038F000E24690 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC17196038F000E24690 /* libboost_system.dylib */; };
 		BE0ADC20196038F000E24690 /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC18196038F000E24690 /* libboost_thread.dylib */; };
-		BE0ADC21196038F000E24690 /* libCGAL_Core.10.0.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC19196038F000E24690 /* libCGAL_Core.10.0.2.dylib */; };
-		BE0ADC22196038F000E24690 /* libCGAL.10.0.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC1A196038F000E24690 /* libCGAL.10.0.2.dylib */; };
 		BE0ADC23196038F000E24690 /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC1B196038F000E24690 /* libgmp.10.dylib */; };
 		BE0ADC24196038F000E24690 /* libgmpxx.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC1C196038F000E24690 /* libgmpxx.4.dylib */; };
 		BE0ADC25196038F000E24690 /* libmpfi.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ADC1D196038F000E24690 /* libmpfi.0.dylib */; };
@@ -23,7 +21,6 @@
 		BE4C0FAF195DBAC20095C08D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0FAE195DBAC20095C08D /* main.m */; };
 		BE4C0FB9195DBAC20095C08D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4C0FB7195DBAC20095C08D /* MainMenu.xib */; };
 		BE4C0FBB195DBAC20095C08D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4C0FBA195DBAC20095C08D /* Images.xcassets */; };
-		BE4C0FC2195DBAC20095C08D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4C0FC1195DBAC20095C08D /* XCTest.framework */; };
 		BE4C0FC3195DBAC20095C08D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4C0FA2195DBAC20095C08D /* Cocoa.framework */; };
 		BE4C0FCB195DBAC20095C08D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE4C0FC9195DBAC20095C08D /* InfoPlist.strings */; };
 		BE4C0FCD195DBAC20095C08D /* TriVisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0FCC195DBAC20095C08D /* TriVisTests.m */; };
@@ -32,10 +29,11 @@
 		BE4C0FDD195DC7500095C08D /* TriVisWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0FDC195DC7500095C08D /* TriVisWindowController.mm */; };
 		BE4C0FE0195DCA9A0095C08D /* TriVisRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0FDF195DCA9A0095C08D /* TriVisRenderer.mm */; };
 		BE4C0FE3195DCCC10095C08D /* TriVisFullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0FE2195DCCC10095C08D /* TriVisFullscreenWindow.m */; };
-		BEC69699196ADD8A00FCF6CC /* Triangle_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC69695196ADD8A00FCF6CC /* Triangle_info.cpp */; };
-		BEC6969A196ADD8A00FCF6CC /* Polygon_repair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC69698196ADD8A00FCF6CC /* Polygon_repair.cpp */; };
 		BEDACE52195EA9B9003B36E9 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BEDACE51195EA9B9003B36E9 /* vertex.glsl */; };
 		BEDACE54195EA9BD003B36E9 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BEDACE53195EA9BD003B36E9 /* fragment.glsl */; };
+		BEFF44FE19A3E51700D08188 /* libCGAL_Core.10.0.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFF44FC19A3E51700D08188 /* libCGAL_Core.10.0.4.dylib */; };
+		BEFF44FF19A3E51700D08188 /* libCGAL.10.0.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFF44FD19A3E51700D08188 /* libCGAL.10.0.4.dylib */; };
+		BEFF450819A3E68900D08188 /* Polygon_repair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEFF450419A3E68900D08188 /* Polygon_repair.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +50,6 @@
 		BE0ADC151960383600E24690 /* GDAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDAL.framework; path = ../../../../../Library/Frameworks/GDAL.framework; sourceTree = "<group>"; };
 		BE0ADC17196038F000E24690 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
 		BE0ADC18196038F000E24690 /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_thread.dylib; path = ../../../../../usr/local/lib/libboost_thread.dylib; sourceTree = "<group>"; };
-		BE0ADC19196038F000E24690 /* libCGAL_Core.10.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL_Core.10.0.2.dylib; path = ../../../../../usr/local/lib/libCGAL_Core.10.0.2.dylib; sourceTree = "<group>"; };
-		BE0ADC1A196038F000E24690 /* libCGAL.10.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL.10.0.2.dylib; path = ../../../../../usr/local/lib/libCGAL.10.0.2.dylib; sourceTree = "<group>"; };
 		BE0ADC1B196038F000E24690 /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = ../../../../../usr/local/lib/libgmp.10.dylib; sourceTree = "<group>"; };
 		BE0ADC1C196038F000E24690 /* libgmpxx.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmpxx.4.dylib; path = ../../../../../usr/local/lib/libgmpxx.4.dylib; sourceTree = "<group>"; };
 		BE0ADC1D196038F000E24690 /* libmpfi.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpfi.0.dylib; path = ../../../../../usr/local/lib/libmpfi.0.dylib; sourceTree = "<group>"; };
@@ -73,7 +69,6 @@
 		BE4C0FB8195DBAC20095C08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BE4C0FBA195DBAC20095C08D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE4C0FC0195DBAC20095C08D /* TriVisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriVisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE4C0FC1195DBAC20095C08D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BE4C0FC8195DBAC20095C08D /* TriVisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriVisTests-Info.plist"; sourceTree = "<group>"; };
 		BE4C0FCA195DBAC20095C08D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE4C0FCC195DBAC20095C08D /* TriVisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriVisTests.m; sourceTree = "<group>"; };
@@ -86,13 +81,18 @@
 		BE4C0FDF195DCA9A0095C08D /* TriVisRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TriVisRenderer.mm; sourceTree = "<group>"; };
 		BE4C0FE1195DCCC10095C08D /* TriVisFullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriVisFullscreenWindow.h; sourceTree = "<group>"; };
 		BE4C0FE2195DCCC10095C08D /* TriVisFullscreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriVisFullscreenWindow.m; sourceTree = "<group>"; };
-		BEC69694196ADD8A00FCF6CC /* Triangle_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle_info.h; sourceTree = "<group>"; };
-		BEC69695196ADD8A00FCF6CC /* Triangle_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle_info.cpp; sourceTree = "<group>"; };
-		BEC69696196ADD8A00FCF6CC /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
-		BEC69697196ADD8A00FCF6CC /* Polygon_repair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon_repair.h; sourceTree = "<group>"; };
-		BEC69698196ADD8A00FCF6CC /* Polygon_repair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon_repair.cpp; sourceTree = "<group>"; };
 		BEDACE51195EA9B9003B36E9 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		BEDACE53195EA9BD003B36E9 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		BEFF44FC19A3E51700D08188 /* libCGAL_Core.10.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL_Core.10.0.4.dylib; path = ../../../../usr/local/lib/libCGAL_Core.10.0.4.dylib; sourceTree = "<group>"; };
+		BEFF44FD19A3E51700D08188 /* libCGAL.10.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL.10.0.4.dylib; path = ../../../../usr/local/lib/libCGAL.10.0.4.dylib; sourceTree = "<group>"; };
+		BEFF450019A3E68900D08188 /* Compact_constrained_triangulation_face_base_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compact_constrained_triangulation_face_base_2.h; sourceTree = "<group>"; };
+		BEFF450119A3E68900D08188 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		BEFF450219A3E68900D08188 /* Edge_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge_info.h; sourceTree = "<group>"; };
+		BEFF450319A3E68900D08188 /* Enhanced_constrained_triangulation_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enhanced_constrained_triangulation_2.h; sourceTree = "<group>"; };
+		BEFF450419A3E68900D08188 /* Polygon_repair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon_repair.cpp; sourceTree = "<group>"; };
+		BEFF450519A3E68900D08188 /* Polygon_repair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon_repair.h; sourceTree = "<group>"; };
+		BEFF450619A3E68900D08188 /* Triangle_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle_info.h; sourceTree = "<group>"; };
+		BEFF450719A3E68900D08188 /* Triangulation_face_base_with_info_on_face_and_halfedges_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangulation_face_base_with_info_on_face_and_halfedges_2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFF44FE19A3E51700D08188 /* libCGAL_Core.10.0.4.dylib in Frameworks */,
+				BEFF44FF19A3E51700D08188 /* libCGAL.10.0.4.dylib in Frameworks */,
 				BE3ADC391960500A009627DA /* GLKit.framework in Frameworks */,
 				BE0ADC1F196038F000E24690 /* libboost_system.dylib in Frameworks */,
 				BE0ADC20196038F000E24690 /* libboost_thread.dylib in Frameworks */,
-				BE0ADC21196038F000E24690 /* libCGAL_Core.10.0.2.dylib in Frameworks */,
-				BE0ADC22196038F000E24690 /* libCGAL.10.0.2.dylib in Frameworks */,
 				BE0ADC23196038F000E24690 /* libgmp.10.dylib in Frameworks */,
 				BE0ADC24196038F000E24690 /* libgmpxx.4.dylib in Frameworks */,
 				BE0ADC25196038F000E24690 /* libmpfi.0.dylib in Frameworks */,
@@ -120,7 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4C0FC3195DBAC20095C08D /* Cocoa.framework in Frameworks */,
-				BE4C0FC2195DBAC20095C08D /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,11 +148,11 @@
 		BE4C0FA1195DBAC20095C08D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEFF44FC19A3E51700D08188 /* libCGAL_Core.10.0.4.dylib */,
+				BEFF44FD19A3E51700D08188 /* libCGAL.10.0.4.dylib */,
 				BE3ADC381960500A009627DA /* GLKit.framework */,
 				BE0ADC17196038F000E24690 /* libboost_system.dylib */,
 				BE0ADC18196038F000E24690 /* libboost_thread.dylib */,
-				BE0ADC19196038F000E24690 /* libCGAL_Core.10.0.2.dylib */,
-				BE0ADC1A196038F000E24690 /* libCGAL.10.0.2.dylib */,
 				BE0ADC1B196038F000E24690 /* libgmp.10.dylib */,
 				BE0ADC1C196038F000E24690 /* libgmpxx.4.dylib */,
 				BE0ADC1D196038F000E24690 /* libmpfi.0.dylib */,
@@ -161,7 +160,6 @@
 				BE0ADC151960383600E24690 /* GDAL.framework */,
 				BE4C0FD6195DC4600095C08D /* OpenGL.framework */,
 				BE4C0FA2195DBAC20095C08D /* Cocoa.framework */,
-				BE4C0FC1195DBAC20095C08D /* XCTest.framework */,
 				BE4C0FA4195DBAC20095C08D /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -232,11 +230,14 @@
 		BE6A2A6A1960A36E00761095 /* prepair */ = {
 			isa = PBXGroup;
 			children = (
-				BEC69694196ADD8A00FCF6CC /* Triangle_info.h */,
-				BEC69695196ADD8A00FCF6CC /* Triangle_info.cpp */,
-				BEC69696196ADD8A00FCF6CC /* Definitions.h */,
-				BEC69697196ADD8A00FCF6CC /* Polygon_repair.h */,
-				BEC69698196ADD8A00FCF6CC /* Polygon_repair.cpp */,
+				BEFF450019A3E68900D08188 /* Compact_constrained_triangulation_face_base_2.h */,
+				BEFF450119A3E68900D08188 /* Definitions.h */,
+				BEFF450219A3E68900D08188 /* Edge_info.h */,
+				BEFF450319A3E68900D08188 /* Enhanced_constrained_triangulation_2.h */,
+				BEFF450419A3E68900D08188 /* Polygon_repair.cpp */,
+				BEFF450519A3E68900D08188 /* Polygon_repair.h */,
+				BEFF450619A3E68900D08188 /* Triangle_info.h */,
+				BEFF450719A3E68900D08188 /* Triangulation_face_base_with_info_on_face_and_halfedges_2.h */,
 			);
 			path = prepair;
 			sourceTree = "<group>";
@@ -341,11 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4C0FDD195DC7500095C08D /* TriVisWindowController.mm in Sources */,
-				BEC69699196ADD8A00FCF6CC /* Triangle_info.cpp in Sources */,
 				BE4C0FE3195DCCC10095C08D /* TriVisFullscreenWindow.m in Sources */,
+				BEFF450819A3E68900D08188 /* Polygon_repair.cpp in Sources */,
 				BE4C0FE0195DCA9A0095C08D /* TriVisRenderer.mm in Sources */,
 				BE4C0FDA195DC6640095C08D /* TriVisGLView.m in Sources */,
-				BEC6969A196ADD8A00FCF6CC /* Polygon_repair.cpp in Sources */,
 				BE4C0FAF195DBAC20095C08D /* main.m in Sources */,
 				BE1D2D9D195EEBD70058FE06 /* TriVisScene.cpp in Sources */,
 			);
@@ -471,7 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,7 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

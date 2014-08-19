@@ -437,8 +437,7 @@ struct Polygon_repairWrapper {
         OGRDataSource::DestroyDataSource(dataSource);
       }
       
-      prepairWrapper->prepair->insert_constraints(inGeometry);
-      prepairWrapper->prepair->attempt_to_fix_overlapping_constraints();
+      prepairWrapper->prepair->insert_odd_even_constraints(inGeometry);
       
       std::vector<GLfloat> triangulationVertices;
       for (prepair::Triangulation::Finite_edges_iterator current_edge = prepairWrapper->prepair->triangulation.finite_edges_begin(); current_edge != prepairWrapper->prepair->triangulation.finite_edges_end(); ++current_edge) {
