@@ -112,12 +112,16 @@ struct Polygon_repairWrapper {
 	fullscreenWindow = nil;
 }
 
+- (void) mouseDragged:(NSEvent *)event {
+  NSLog(@"Left mouse dragged (%f, %f)", [event deltaX], [event deltaY]);
+  [view->renderer moveX:[event deltaX]*2.0 andY:[event deltaY]*2.0];
+  [view drawView];
+}
+
 - (void) keyDown:(NSEvent *)event {
   
   unichar c = [event keyCode];
-  
-  NSLog(@"Pressed: %i", c);
-  
+//  NSLog(@"Pressed key: %i", c);
   switch (c) {
     
       // [F/f] toggles full-screen mode
@@ -432,12 +436,12 @@ struct Polygon_repairWrapper {
       
       [view->renderer loadInput:inputVertices.size() vertices:inputVertices.data()];
       
+      prepairWrapper->prepair->insert_odd_even_constraints(inGeometry);
+      
       if (![filename hasSuffix:@".txt"]) {
         OGRFeature::DestroyFeature(feature);
         OGRDataSource::DestroyDataSource(dataSource);
       }
-      
-      prepairWrapper->prepair->insert_odd_even_constraints(inGeometry);
       
       std::vector<GLfloat> triangulationVertices;
       for (prepair::Triangulation::Finite_edges_iterator current_edge = prepairWrapper->prepair->triangulation.finite_edges_begin(); current_edge != prepairWrapper->prepair->triangulation.finite_edges_end(); ++current_edge) {
@@ -597,6 +601,14 @@ struct Polygon_repairWrapper {
       [view->renderer center];
     }
   }];
+}
+
+- (NSWindow *) currentWindow {
+  if (fullscreenWindow == nil) {
+    return standardWindow;
+  } else {
+    return fullscreenWindow;
+  }
 }
 
 @end

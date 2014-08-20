@@ -45,5 +45,6 @@
 }
 
 - (IBAction) openFile:(id)sender;
+- (NSWindow *) currentWindow;
 
 @end
